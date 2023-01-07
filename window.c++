@@ -1,12 +1,57 @@
-#include <iostream>
-#include <stdio.h>
-#include <stdlib.h>
-#include "fileSystem.c++"
-#include "admin.c++"
+#include "window.h"
+
 void showPrompt() {
 
-    return;
+    int decision;
+
+    while(true){
+
+        std::cout << "Press 1 to create a customer account\nPress 2 to show admin's credentials\nPress 3 to show customer's information\nPress 4 to edit customer's information\nPress 5 to check customer's balance\nPress 6 to quit\n";
+        std::cin >> decision;
+
+        if(decision == 1){
+            
+            FILESYS::clearUserInput();
+            ADMIN::createCustomer();
+
+        }
+
+        else if(decision == 2){
+
+            
+            ADMIN::showCredentials();
+
+        }
+
+        else if(decision == 3){
+
+            ADMIN::viewCustomer();
+
+        }
+
+        else if(decision == 4){
+
+            ADMIN::addCustomerInfo();
+
+        }
+
+        else if(decision == 6){
+
+            break;
+
+        }
+
+        else {
+
+          std::cout << "Error.\n";
+
+
+        }
+
+    }
+    
 }
+
 void showWindow() {
     
     int decision;
@@ -21,9 +66,9 @@ void showWindow() {
 
 		    if(decision == 1) {
 			
-          clearUserInput();
+          FILESYS::clearUserInput();
 
-          createAdmin();
+          ADMIN::createAdmin();
 
 			    break;
 
@@ -31,9 +76,9 @@ void showWindow() {
 
 		    else if(decision == 2) {
 
-          clearUserInput();
+          FILESYS::clearUserInput();
 
-          adminLogin();
+          ADMIN::adminLogin();
 
           showPrompt();
 
