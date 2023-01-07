@@ -43,6 +43,14 @@ void addNewCustomer(char* name, char* addr, char* city, char* email, char* num, 
 //to find out if the name (customer's name) exist within the csv file. If so, 
 //it will print out the entire row.
 
-void displayCustomerInfo(char* name);
+bool displayCustomerInfo(char* name);
 
+
+//@editFile()
+//@param: std::string fileName, std::string ori, std::string replace
+//@description: Will take three strings as arguments, it will find the ori within
+//the file using std::string.find() function to get the pointer to the word. 
+//The std::string.replace() will be used to replace or with replace.
+
+void editFile(char* fileName, char* ori, char* replace);
 #endif

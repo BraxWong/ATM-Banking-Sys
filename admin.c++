@@ -119,3 +119,29 @@ void viewCustomer() {
     displayCustomerInfo(name);
 
 }
+
+void addCustomerInfo() {
+
+    std::string name, replace;
+
+    while(true){
+    
+        std::cout << "Please enter the name of the customer you would like to view.\n";
+        std::getline(std::cin,name);
+
+        if(displayCustomerInfo(name)){
+
+            break;
+
+        }
+
+    }
+
+    FILESYS::clearUserInput();
+    std::cout << "Please enter what you would like to replace.\n";
+    std::getline(std::cin,name);
+    std::cout << "Please enter what you would like to replace with.\n";
+    std::getline(std::cin,replace);
+
+    FILESYS::editFile("customerRecord.csv",name,replace);
+}

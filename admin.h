@@ -43,4 +43,13 @@ void createCustomer();
 //@Helper_Functions: displayCustomerInfo() -> fileSystem.c++
 
 void viewCustomer();
+
+
+//@addCustomerInfo()
+//@description: Will ask for customer's name, then it will be passed in as an argument for displayCustomerInfo().
+//The system will then ask what the user would like to replace. Then it will ask what the user would like to replace
+//it with. Both of the user input will then be passed into editFile() to replace the info.
+//@Helper_Functions: editFile() -> fileSystem.c++
+
+void addCustomerInfo();
 #endif

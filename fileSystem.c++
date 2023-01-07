@@ -64,7 +64,7 @@ void addNewCustomer(std::string name, std::string addr, std::string city, std::s
 }
 
 
-void displayCustomerInfo(std::string name){
+bool displayCustomerInfo(std::string name){
 
     int count = 0;
     std::fstream customerRecord;
@@ -96,11 +96,32 @@ void displayCustomerInfo(std::string name){
         if(count == 1){
 
             std::cout << '\n';
+            return true;
 
         }
 
     }
 
     std::cout << "Error: Customer is not found within the database.\n";
+    return false;
+
+}
+
+
+void editFile(std::string fileName, std::string ori, std::string replace) {
+
+    std::ostringstream text;
+    std::ifstream in_file(fileName);
+
+    text << in_file.rdbuf();
+    std::string str = text.str();
+    std::string str_search = ori;
+    std::string str_replace = replace;
+    size_t pos = str.find(ori);
+    str.replace(pos,std::string(str_search).length(), str_replace);
+    in_file.close();
+
+    std::ofstream out_file(fileName);
+    out_file << str;
 
 }

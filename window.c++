@@ -27,6 +27,11 @@ void showPrompt() {
 
             ADMIN::viewCustomer();
 
+        }
+
+        else if(decision == 4){
+
+            ADMIN::addCustomerInfo();
 
         }
 
