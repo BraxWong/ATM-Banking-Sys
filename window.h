@@ -3,9 +3,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <iostream>
-#include "fileSystem.h"
-#include "admin.h"
-
+#include "admin.c++"
+#include "fileSystem.c++"
 
 void showWindow();
 

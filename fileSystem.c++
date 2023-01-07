@@ -1,12 +1,5 @@
 #pragma once
-#include <iostream>
-#include <stdlib.h>
-#include <stdio.h>
-#include <fstream>
-#include <sstream>
-#include <limits>
-#include <vector>
-#include <sstream>
+#include "fileSystem.h"
 
 void clearUserInput() {
 

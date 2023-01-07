@@ -1,7 +1,4 @@
-#include <iostream>
-#include <stdlib.h>
-#include <stdio.h>
-#include "fileSystem.c++"
+#include "admin.h"
 
 
 void adminLogin() {

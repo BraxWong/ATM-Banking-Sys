@@ -8,6 +8,7 @@
 #include <sstream>
 #include <vector>
 #include <sstream>
+
 void clearUserInput();
 
 bool checkAdminLogin(char* username, char* password);

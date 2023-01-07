@@ -1,12 +1,10 @@
-#include <iostream>
-#include <stdio.h>
-#include <stdlib.h>
-#include "fileSystem.c++"
-#include "admin.c++"
+#include "window.h"
+
 void showPrompt() {
 
     return;
 }
+
 void showWindow() {
     
     int decision;
@@ -21,9 +19,9 @@ void showWindow() {
 
 		    if(decision == 1) {
 			
-          clearUserInput();
+          FILESYS::clearUserInput();
 
-          createAdmin();
+          ADMIN::createAdmin();
 
 			    break;
 
@@ -31,9 +29,9 @@ void showWindow() {
 
 		    else if(decision == 2) {
 
-          clearUserInput();
+          FILESYS::clearUserInput();
 
-          adminLogin();
+          ADMIN::adminLogin();
 
           showPrompt();
 
