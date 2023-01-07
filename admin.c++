@@ -85,3 +85,27 @@ void showCredentials() {
     }
 
 }
+
+
+void createCustomer() {
+
+    std::string name, addr, city, email, num, id, balance;
+
+    std::cout << "Please enter the name of the customer.\n";
+    std::getline(std::cin,name);
+    std::cout << "Please enter the address of the customer.\n";
+    std::getline(std::cin,addr);
+    std::cout << "Please enter the city of which the customer live in.\n";
+    std::cin >> city;
+    std::cout << "Please enter the email address of the customer.\n";
+    std::cin >> email;
+    std::cout << "Please enter the customer's phone number.\n";
+    std::cin >> num;
+    std::cout << "Please enter the customer's bank account id.\n";
+    std::cin >> id;
+    std::cout << "Please enter the customer's bank account balance.\n";
+    std::cin >> balance;
+
+    addNewCustomer(name,addr,city,email,num,id,balance);
+
+}

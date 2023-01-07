@@ -15,7 +15,7 @@ void showWindow();
 
 //@showPrompt()
 //@description: Will ask for user inputs in order to proceed. It has 6 options
-//@Options: 1. Create customer account
+//@Options: 1. Create customer account -> createCustomer() -> admin.c++
 //@Options: 2. Show admin's credentials -> showCredentials() -> admin.c++
 //@Options: 3. Show customer's information
 //@Options: 4. Edit customer's information

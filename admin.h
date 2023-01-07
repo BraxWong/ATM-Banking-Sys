@@ -28,4 +28,11 @@ void adminLogin();
 
 void showCredentials();
 
+//@createCustomer()
+//@description: Will ask for customer name, address, city, email address, phone number, 
+//bank account id, and bank account balance. All these info will then be passed into 
+//addNewCustomer() from fileSystem.c++
+//@Helper_Functions: addNewCustomer() -> fileSystem.c++
+
+void createCustomer();
 #endif

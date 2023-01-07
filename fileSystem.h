@@ -28,4 +28,12 @@ bool checkAdminLogin(char* username, char* password);
 //to adminRecord.csv file without overriding existing data.
 
 void addNewEntry(char* fileName, char* username, char* password);
+
+//@addNewCustomer()
+//@param: std::string name,  std::string addr, std::string city, std::string email, std::string num,
+//std::string id, std::string balance
+//@description: Takes name, addr, city, email, num, id, and balance as arguments. It appends
+//to customerRecord.csv file without overriding existing data.
+
+void addNewCustomer(char* name, char* addr, char* city, char* email, char* num, char* id, char* balance);
 #endif

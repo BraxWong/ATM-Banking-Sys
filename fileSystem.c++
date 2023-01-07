@@ -55,3 +55,10 @@ void addNewEntry(std::string fileName, std::string username, std::string passwor
 
 }
 
+void addNewCustomer(std::string name, std::string addr, std::string city, std::string email, std::string num, std::string id, std::string balance){
+
+    std::ofstream customerRecord;
+    customerRecord.open("customerRecord.csv", std::ios_base::app);
+    customerRecord << name << "," << addr << "," << city << "," << email << "," << num << "," << id << "," << balance <<"\n";
+
+}
