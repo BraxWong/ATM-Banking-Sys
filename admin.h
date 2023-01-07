@@ -35,4 +35,9 @@ void showCredentials();
 //@Helper_Functions: addNewCustomer() -> fileSystem.c++
 
 void createCustomer();
+
+//@viewCustomer()
+//@description: 
+
+void viewCustomer();
 #endif

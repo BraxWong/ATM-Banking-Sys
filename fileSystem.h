@@ -36,4 +36,11 @@ void addNewEntry(char* fileName, char* username, char* password);
 //to customerRecord.csv file without overriding existing data.
 
 void addNewCustomer(char* name, char* addr, char* city, char* email, char* num, char* id, char* balance);
+
+//@displayCustomerInfo()
+//@param: std::string name
+//@description: 
+
+void displayCustomerInfo(char* name);
+
 #endif

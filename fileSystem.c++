@@ -62,3 +62,45 @@ void addNewCustomer(std::string name, std::string addr, std::string city, std::s
     customerRecord << name << "," << addr << "," << city << "," << email << "," << num << "," << id << "," << balance <<"\n";
 
 }
+
+
+void displayCustomerInfo(std::string name){
+
+    int count = 0;
+    std::fstream customerRecord;
+    customerRecord.open("customerRecord.csv",std::ios::in);
+    std::string line, word;
+
+    while(customerRecord.good()){
+
+        std::getline(customerRecord,line);
+        std::stringstream s(line);
+
+        while(std::getline(s,word,',')){
+
+            if(count == 1){
+
+                std::cout << word << " ";
+
+            }
+
+            if(word == name){
+
+                count = 1;
+                std::cout << word << " ";
+
+            }
+
+        }
+
+        if(count == 1){
+
+            std::cout << '\n';
+
+        }
+
+    }
+
+    std::cout << "Error: Customer is not found within the database.\n";
+
+}

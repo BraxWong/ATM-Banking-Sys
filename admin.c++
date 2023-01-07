@@ -109,3 +109,13 @@ void createCustomer() {
     addNewCustomer(name,addr,city,email,num,id,balance);
 
 }
+
+
+void viewCustomer() {
+
+    std::string name;
+    std::cout << "Please enter the name of the customer you would like to view.\n";
+    std::cin >> name;
+    displayCustomerInfo(name);
+
+}

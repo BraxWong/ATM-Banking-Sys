@@ -23,6 +23,13 @@ void showPrompt() {
 
         }
 
+        else if(decision == 3){
+
+            ADMIN::viewCustomer();
+
+
+        }
+
         else if(decision == 6){
 
             break;
