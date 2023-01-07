@@ -37,7 +37,10 @@ void showCredentials();
 void createCustomer();
 
 //@viewCustomer()
-//@description: 
+//@description: Will ask for customer's name, then it will be passed in as an argument for displayCustomerInfo().
+//displayCustomerInfo() from fileSystem.c++ will then check if the name exists within he csv, then prints out
+//the entire row.
+//@Helper_Functions: displayCustomerInfo() -> fileSystem.c++
 
 void viewCustomer();
 #endif

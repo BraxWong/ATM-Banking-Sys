@@ -39,7 +39,9 @@ void addNewCustomer(char* name, char* addr, char* city, char* email, char* num, 
 
 //@displayCustomerInfo()
 //@param: std::string name
-//@description: 
+//@description: Takes a string as an argument, then goes through customerRecord.csv
+//to find out if the name (customer's name) exist within the csv file. If so, 
+//it will print out the entire row.
 
 void displayCustomerInfo(char* name);
 
