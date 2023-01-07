@@ -54,3 +54,34 @@ void createAdmin() {
   }
 
 }
+
+
+void showCredentials() {
+    
+    std::string username, password;
+    int i = 0;
+
+    while(i != 3){
+        
+        std::cout << "Please enter your admin username.\n";
+        std::cin >> username;
+        std::cout << "Please enter your admin password.\n";
+        std::cin >> password;
+
+        if(checkAdminLogin(username,password)){
+            
+            std::cout << "Your admin username is: " << username << "\nYour admin password is: " << password << "\n";
+            break;
+
+        }
+
+        else {
+            
+            ++i;
+            std::cout << "Incorrect admin username or password. " << 3 - i << " attempts left.\n";
+
+        }
+
+    }
+
+}

@@ -21,5 +21,11 @@ void createAdmin();
 
 void adminLogin();
 
+//@showCredentials()
+//@description: Displays the admin's username and password 
+//after re-verification using checkAdminLogin() function from fileSystem.c++
+//@Helper_Functions: checkAdminLogin() -> fileSystem.c++
+
+void showCredentials();
 
 #endif

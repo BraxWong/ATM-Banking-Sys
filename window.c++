@@ -3,13 +3,28 @@
 void showPrompt() {
 
     int decision;
+
     while(true){
 
-        std::cout << "Press 1 to create a customer account\nPress 2 to show customer's credentials\nPress 3 to show customer's information\nPress 4 to edit customer's information\nPress 5 to check customer's balance\nPress 6 to quit\n";
+        std::cout << "Press 1 to create a customer account\nPress 2 to show admin's credentials\nPress 3 to show customer's information\nPress 4 to edit customer's information\nPress 5 to check customer's balance\nPress 6 to quit\n";
         std::cin >> decision;
-        if(decision == 6){
+
+        if(decision == 2){
+
+            ADMIN::showCredentials();
+
+        }
+
+        else if(decision == 6){
 
             break;
+
+        }
+
+        else {
+
+          std::cout << "Error.\n";
+
 
         }
 
