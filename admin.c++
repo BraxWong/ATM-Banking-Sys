@@ -26,6 +26,13 @@ void adminLogin() {
 
 }
 
+void adminLogout() {
+
+    std::cout << "Exiting the ATM-Banking-System...\n";
+    exit(0);
+
+}
+
 
 void createAdmin() {
 

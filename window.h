@@ -20,7 +20,7 @@ void showWindow();
 //@Options: 3. Show customer's information -> viewCustomer() -> admin.c++
 //@Options: 4. Edit customer's information -> addCustomerInfo() -> admin.c++
 //@Options: 5. Check customer's account balance
-//@Options: 6. Exit the program
+//@Options: 6. Exit the program -> adminLogout() -> admin.c++
 
 void showPrompt();
 

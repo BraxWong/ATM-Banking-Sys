@@ -37,7 +37,7 @@ void showPrompt() {
 
         else if(decision == 6){
 
-            break;
+            ADMIN::adminLogout();
 
         }
 

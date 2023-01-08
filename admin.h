@@ -52,4 +52,10 @@ void viewCustomer();
 //@Helper_Functions: editFile() -> fileSystem.c++
 
 void addCustomerInfo();
+
+//@adminlogout()
+//@description: Will exit the program using exit(0) and passing 0 as an argument.
+
+void adminLogout();
+
 #endif
